@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\.metadata\.plugins\org.eclipse.jdt.core
+1117455030.index

@@ -1,0 +1,29 @@
+2020-01-13 15:03:02,669 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-01-13 15:04:35,101 [Worker-2: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ftn.uns.ac.rs:naucnaCentrala:0.0.1-SNAPSHOT @ C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\pom.xml.
+2020-01-13 15:04:37,496 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /naucnaCentrala/src/main/java
+2020-01-13 15:04:37,496 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /naucnaCentrala/src/main/resources
+2020-01-13 15:04:37,504 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /naucnaCentrala/src/main/resources
+2020-01-13 15:04:37,516 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /naucnaCentrala/src/test/java
+2020-01-13 15:04:39,239 [Worker-2: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
+2020-01-13 15:04:39,241 [Worker-2: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-01-13 15:04:39,714 [Worker-2: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ftn.uns.ac.rs:naucnaCentrala:0.0.1-SNAPSHOT @ C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\pom.xml.
+2020-01-13 15:04:40,086 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /naucnaCentrala/src/main/java
+2020-01-13 15:04:40,086 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /naucnaCentrala/src/main/resources
+2020-01-13 15:04:40,086 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /naucnaCentrala/src/main/resources
+2020-01-13 15:04:40,087 [Worker-2: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /naucnaCentrala/src/test/java
+2020-01-13 15:04:40,364 [Worker-2: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2020-01-13 15:04:41,165 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:04:41,169 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-13 15:04:41,180 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-01-13 15:04:41,183 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:04:41,183 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\test\resources
+2020-01-13 15:46:39,515 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:46:39,516 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\main\resources
+2020-01-13 15:46:39,516 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\main\resources
+2020-01-13 15:46:39,518 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:46:39,518 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\test\resources
+2020-01-13 15:46:42,326 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:46:42,326 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\main\resources
+2020-01-13 15:46:42,326 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\main\resources
+2020-01-13 15:46:42,327 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-13 15:46:42,328 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\naucnaCentrala\src\test\resources
