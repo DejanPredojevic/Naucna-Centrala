@@ -1,0 +1,20 @@
+<h1 style="text-align: center;">Users waiting for reviewer approval</h1>
+<table class="container table mt-3 table-hover" style="text-align:center;">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col" colspan="5">
+                  Users
+            </th>
+          </tr>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users ; let i = index" (click)="RowSelected(user); " id="{{user.username}}">
+        <th scope="row">{{i + 1}}</th>
+        <th>{{user.username}}</th>
+      </tr>
+    </tbody>
+  </table>

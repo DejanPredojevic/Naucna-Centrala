@@ -1,0 +1,32 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 
+            px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <a [routerLink]="'/'" class="my-0 font-weight-normal" style="color:black;">
+    <h5>Scientific Center</h5>
+  </a>
+  <ul  class="nav left mr-md-auto ml-5">
+    <li  class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/'">Home</a>
+   </li>
+    <li *ngIf="tandu.role == 'admin'" class="nav-item">
+        <a class="nav-link navigacija" [routerLink]="'/approval'">Approvals</a>
+    </li>
+</ul>
+<ul *ngIf="tandu.username == 'undefined'" class="nav" >
+  <li class="nav-item">
+      <a  class="nav-link registracija" [routerLink]="'/register'">Register</a>
+  </li>
+  <li class="nav-item">
+    <a  class="nav-link logovanje" [routerLink]="'/login'">Sign in</a>
+  </li>
+</ul>
+<ul *ngIf="tandu.username != 'undefined'" class="nav" style="margin-right: 2vh;">
+  <li *ngIf="tandu.username != 'undefined'" class="nav-item ml-3">
+    <div class="inline row">
+        <p class="nav-link inline ml-3">{{tandu.username}}</p>
+        <a class="nav-link" [routerLink]="'/'" (click)="logout()">
+          Log out
+        </a>
+    </div>
+  </li>
+</ul>
+</div>
