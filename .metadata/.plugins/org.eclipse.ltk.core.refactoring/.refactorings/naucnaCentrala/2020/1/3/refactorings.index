@@ -1,0 +1,12 @@
+1578933757343	Rename type 'FormFieldsDto'
+1579035268839	Rename type 'FormFields'
+1579096794031	Rename type 'FormSubmission'
+1579135330231	Delete element
+1579136158794	Rename package 'ftn.uns.ac.rs.model'
+1579136207929	Delete element
+1579136221396	Delete element
+1579136397079	Rename package 'ftn.uns.ac.rs.model.dto'
+1579136408267	Move compilation unit
+1579136410622	Move compilation unit
+1579136736162	Rename type 'ScintificArea'
+1579146067068	Delete element

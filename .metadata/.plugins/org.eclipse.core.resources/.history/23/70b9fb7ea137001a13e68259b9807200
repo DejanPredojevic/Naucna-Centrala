@@ -1,0 +1,15 @@
+package ftn.uns.ac.rs.model;
+
+import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FormSubmissionRequest implements Serializable {
+	String fieldId;
+	String fieldValue;
+}

@@ -1,0 +1,40 @@
+package ftn.uns.ac.rs.services;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RepositoryService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class RegistrationService {
+
+	@Autowired
+	IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	private RepositoryService repositoryService;
+	
+	@Autowired
+	TaskService taskService;
+	
+	@Autowired
+	FormService formService;
+
+	public FormFieldsResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("Process_1");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+        return new FormFieldsDto(task.getId(), pi.getId(), properties);
+	}
+}

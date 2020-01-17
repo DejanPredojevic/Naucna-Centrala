@@ -1,0 +1,140 @@
+package ftn.uns.ac.rs.services;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RepositoryService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.form.FormField;
+import org.camunda.bpm.engine.form.TaskFormData;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.camunda.bpm.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.ScientificArea;
+import ftn.uns.ac.rs.model.UserData;
+import ftn.uns.ac.rs.repository.ScientificAreaRepository;
+import ftn.uns.ac.rs.repository.UserDataRepository;
+
+@Service
+public class RegistrationService {
+
+	@Autowired
+	IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	private RepositoryService repositoryService;
+	
+	@Autowired
+	TaskService taskService;
+	
+	@Autowired
+	FormService formService;
+	
+	@Autowired
+	ScientificAreaRepository scientificRepo;
+
+	public FormFieldsResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("Registracija");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+		List<ScientificArea> area = scientificRepo.findAll();
+		List<String> oblasti = new ArrayList<String>();
+		for (ScientificArea scientificArea : area) {
+			oblasti.add(scientificArea.getScientificArea());
+		}
+		
+        return new FormFieldsResponse(task.getId(), pi.getId(), properties, oblasti);
+	}
+	
+	public boolean register(List<FormSubmissionRequest> dto, @PathVariable String taskId) {
+		
+		UserData userData = createUserData(dto);
+		
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("oblast")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(taskId, map);
+		
+		Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+		String processInstanceId = task.getProcessInstanceId();
+		System.out.println(processInstanceId);
+		runtimeService.setVariable(processInstanceId, "userData", userData);
+
+        return true;
+	}
+	
+	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)
+	{
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for(FormSubmissionRequest temp : list){
+			map.put(temp.getFieldId(), temp.getFieldValue());
+		}
+		
+		return map;
+	}
+	
+	private UserData createUserData(List<FormSubmissionRequest> dto) {
+		UserData userData = new UserData();
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("oblast")) {
+				userData.setScientificArea(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("ime")) {
+				userData.setIme(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("prezime")) {
+				userData.setPrezime(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("grad")) {
+				userData.setGrad(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("titula")) {
+				userData.setTitula(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("email")) {
+				userData.setEmail(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("recenzent")) {
+				//System.out.println(dto.get(i).getFieldValue() + " samo da ispisem ... ");
+				if(dto.get(i).getFieldValue().equals("true")) {
+					userData.setRecenzent(true);
+				}else{
+					userData.setRecenzent(false);
+				}
+				userData.setOdobrenRecenzent(false);
+			}
+			if(dto.get(i).getFieldId().equals("username")) {
+				userData.setUsername(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("password")) {
+				userData.setPassword(dto.get(i).getFieldValue());
+			}
+		}
+		
+		
+		return userData;
+	}
+}

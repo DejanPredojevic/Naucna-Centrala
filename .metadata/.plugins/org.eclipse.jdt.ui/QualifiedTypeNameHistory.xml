@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.EnableWebMvc"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.FilterRegistrationBean"/>
+<fullyQualifiedTypeName name="org.springframework.web.cors.UrlBasedCorsConfigurationSource"/>
+<fullyQualifiedTypeName name="org.springframework.web.cors.CorsConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.web.filter.CorsFilter"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.IdentityService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.RuntimeService"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.RepositoryService"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.TaskService"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.FormService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="ftn.uns.ac.rs.services.RegistrationService"/>
+<fullyQualifiedTypeName name="ftn.uns.ac.rs.model.FormFieldsResponse"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.runtime.ProcessInstance"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.form.TaskFormData"/>
+<fullyQualifiedTypeName name="org.camunda.bpm.engine.form.FormField"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

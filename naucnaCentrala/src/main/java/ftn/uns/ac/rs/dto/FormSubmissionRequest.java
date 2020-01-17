@@ -1,0 +1,19 @@
+package ftn.uns.ac.rs.dto;
+
+import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FormSubmissionRequest implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5206091139215425112L;
+	String fieldId;
+	String fieldValue;
+}

@@ -1,0 +1,16 @@
+package ftn.uns.ac.rs.model;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.form.FormField;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class FormFieldsResponse {
+	String taskId;
+	List<FormField> formFields;
+	String processInstanceId;
+}
