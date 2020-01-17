@@ -104,6 +104,7 @@ public class RegistrationService {
 			adminRepository.save(admin);
 		}
 		
+		
 		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
 		System.out.println(task.getId());
 		HashMap<String, Object> map = this.mapListToDto(dto);

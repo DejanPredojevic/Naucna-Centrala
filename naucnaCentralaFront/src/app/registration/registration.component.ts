@@ -26,9 +26,6 @@ export class RegistrationComponent implements OnInit {
         this.formFields = this.formFieldsDto.formFields;
         this.processInstance = this.formFieldsDto.processInstanceId;
         this.oblasti = this.formFieldsDto.scientificFields;
-        this.formFields.forEach( (field) =>{
-          
-        });
       },
       err => {
         console.log("Error occured");
@@ -54,6 +51,7 @@ export class RegistrationComponent implements OnInit {
     this.userService.registerUser(o, this.formFieldsDto.taskId).subscribe(
       res => {
         alert("You registered successfully!")
+        window.location.href = "http://localhost:4201/login/";
       },
       err => {
         console.log("Error occured");

@@ -95,14 +95,8 @@ public class RegistrationService {
 	}
 	
 	public boolean approveUser(List<FormSubmissionRequest> dto, @PathVariable String procesId) {
-		if(dto.get(0).getFieldValue().equals("true")) {
-			runtimeService.setVariable(procesId, "odobrenje", dto);
-			runtimeService.setVariable(procesId, "procesID", procesId);
-		}else {
-			AdminApprovals admin =  adminRepository.findByProcesID(procesId).get(0);
-			admin.setStatus("Obradjen");
-			adminRepository.save(admin);
-		}
+		runtimeService.setVariable(procesId, "odobrenje", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
 		
 		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
 		System.out.println(task.getId());

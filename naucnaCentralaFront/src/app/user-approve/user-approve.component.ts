@@ -45,7 +45,10 @@ export class UserApproveComponent implements OnInit {
     console.log(value)
     let o = new Array();
     for (var property in value) {
-       o.push({fieldId : property, fieldValue : value[property]});
+      if(value[property] == "")
+          o.push({fieldId : property, fieldValue : false});
+      else
+          o.push({fieldId : property, fieldValue : value[property]});
     }
     this.userService.approveUser(o, this.id).subscribe(
       res => {
