@@ -2292,3 +2292,5 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.camunda.b
 2020-01-17 05:13:11,761 [Worker-331: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-01-17 05:13:11,761 [Worker-331: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-01-17 05:13:11,763 [Worker-331: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-17 05:13:11,764 [Worker-331: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-17 05:13:11,764 [Worker-331: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
