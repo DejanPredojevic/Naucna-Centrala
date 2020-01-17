@@ -138,11 +138,5 @@ public class RegistrationService {
 			return new LoginResponse();
 		}
 		userData = userDataRepository.findByUsername(loginRequest.getUsername()).get(0);
-		LoginResponse loginResponse = new LoginResponse();
-		if(userData.getPassword().equals(loginRequest.getPassword())) {
-			loginResponse.setRole(userData.getRole());
-			loginResponse.setUsername(loginRequest.getUsername());
-		}
-		return loginResponse;
 	}
 }

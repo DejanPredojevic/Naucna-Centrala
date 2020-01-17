@@ -56,7 +56,7 @@ public class RegistrationController {
         
     }
 	
-	@PostMapping(path = "/login", produces = "application/json")
+	@PostMapping("/loginClient")
 	public ResponseEntity<LoginResponse> loginKorisnik(@RequestBody LoginRequest loginRequest) throws Exception{
 		return new ResponseEntity<LoginResponse>(registrationService.login(loginRequest), HttpStatus.OK);
 	}

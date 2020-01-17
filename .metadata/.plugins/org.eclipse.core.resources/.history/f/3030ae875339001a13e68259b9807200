@@ -51,6 +51,4 @@ public class UserData {
 	@Column(nullable=false,length=100)
 	private String scientificArea;
 
-	@Column
-	private String role;
 }

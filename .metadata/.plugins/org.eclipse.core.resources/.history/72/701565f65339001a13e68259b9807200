@@ -20,8 +20,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import ftn.uns.ac.rs.dto.FormFieldsResponse;
 import ftn.uns.ac.rs.dto.FormSubmissionRequest;
-import ftn.uns.ac.rs.dto.LoginRequest;
-import ftn.uns.ac.rs.dto.LoginResponse;
 import ftn.uns.ac.rs.model.AdminApprovals;
 import ftn.uns.ac.rs.model.ScientificArea;
 import ftn.uns.ac.rs.model.UserData;
@@ -40,9 +38,6 @@ public class RegistrationService {
 	
 	@Autowired
 	private RepositoryService repositoryService;
-	
-	@Autowired
-	private UserDataRepository userDataRepository;
 	
 	@Autowired
 	TaskService taskService;
@@ -130,19 +125,5 @@ public class RegistrationService {
 		}
 		
 		return map;
-	}
-	
-	public LoginResponse login(LoginRequest loginRequest) {
-		UserData userData = null;
-		if(userDataRepository.findByUsername(loginRequest.getUsername()) == null) {
-			return new LoginResponse();
-		}
-		userData = userDataRepository.findByUsername(loginRequest.getUsername()).get(0);
-		LoginResponse loginResponse = new LoginResponse();
-		if(userData.getPassword().equals(loginRequest.getPassword())) {
-			loginResponse.setRole(userData.getRole());
-			loginResponse.setUsername(loginRequest.getUsername());
-		}
-		return loginResponse;
 	}
 }

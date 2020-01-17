@@ -133,16 +133,7 @@ public class RegistrationService {
 	}
 	
 	public LoginResponse login(LoginRequest loginRequest) {
-		UserData userData = null;
-		if(userDataRepository.findByUsername(loginRequest.getUsername()) == null) {
-			return new LoginResponse();
-		}
-		userData = userDataRepository.findByUsername(loginRequest.getUsername()).get(0);
-		LoginResponse loginResponse = new LoginResponse();
-		if(userData.getPassword().equals(loginRequest.getPassword())) {
-			loginResponse.setRole(userData.getRole());
-			loginResponse.setUsername(loginRequest.getUsername());
-		}
-		return loginResponse;
+		Client client  = userD.findByUsername(loginRequest.getUsername());
+		
 	}
 }
