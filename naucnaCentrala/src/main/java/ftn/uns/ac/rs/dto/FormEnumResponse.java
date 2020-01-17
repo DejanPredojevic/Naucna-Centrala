@@ -1,0 +1,20 @@
+package ftn.uns.ac.rs.dto;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.form.FormField;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class FormEnumResponse {
+	
+	String taskId;
+	String processInstanceId;
+	List<FormField> formFields;
+	List<String> urednici;
+	List<String> recenzenti;
+
+}

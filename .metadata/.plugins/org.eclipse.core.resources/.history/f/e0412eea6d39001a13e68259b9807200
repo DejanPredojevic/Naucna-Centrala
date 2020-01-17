@@ -1,0 +1,35 @@
+package ftn.uns.ac.rs.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.services.NewMagazineService;
+
+@Controller
+public class NewMagazineController {
+		
+		@Autowired
+		NewMagazineService newMagazineService;
+		
+		@GetMapping(path = "/startNewMagazine", produces = "application/json")
+	    public ResponseEntity<FormFieldsResponse> startRegistration() {
+			FormFieldsResponse paymentOrderResponse = newMagazineService.start();
+	        return ResponseEntity.ok().body(paymentOrderResponse);
+	    }
+		
+		@PostMapping(path = "/saveMagazine/{taskId}")
+	    public ResponseEntity<String> register(@RequestBody List<FormSubmissionRequest> dto, @PathVariable String taskId) {
+			String procesId = newMagazineService.saveMagazine(dto,taskId);
+			return ResponseEntity.ok().body(procesId);
+	        
+	    }
+}

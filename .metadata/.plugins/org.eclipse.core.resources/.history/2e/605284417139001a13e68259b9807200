@@ -1,0 +1,124 @@
+package ftn.uns.ac.rs.services;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.form.FormField;
+import org.camunda.bpm.engine.form.TaskFormData;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.camunda.bpm.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import ftn.uns.ac.rs.dto.FormEnumResponse;
+import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.dto.ProcesDto;
+import ftn.uns.ac.rs.model.ScientificArea;
+import ftn.uns.ac.rs.model.UserData;
+import ftn.uns.ac.rs.repository.AdminRepository;
+import ftn.uns.ac.rs.repository.ScientificAreaRepository;
+import ftn.uns.ac.rs.repository.UserDataRepository;
+
+@Service
+public class NewMagazineService {
+	@Autowired
+	IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	TaskService taskService;
+	
+	@Autowired
+	FormService formService;
+	
+	@Autowired
+	ScientificAreaRepository scientificRepo;
+	
+	@Autowired
+	AdminRepository adminRepository;
+	
+	@Autowired
+	UserDataRepository userDataRepository;
+
+	public FormFieldsResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("Kreiranje_casopisa");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+		List<ScientificArea> area = scientificRepo.findAll();
+		List<String> oblasti = new ArrayList<String>();
+		for (ScientificArea scientificArea : area) {
+			oblasti.add(scientificArea.getScientificArea());
+		}
+		
+        return new FormFieldsResponse(task.getId(), pi.getId(), properties, oblasti);
+	}
+	
+	public ProcesDto saveMagazine(List<FormSubmissionRequest> dto, @PathVariable String taskId) {
+		
+		Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+		String processInstanceId = task.getProcessInstanceId();
+		runtimeService.setVariable(processInstanceId, "magazineData", dto);
+		runtimeService.setVariable(processInstanceId, "procesID", processInstanceId);
+
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("naucneOblasti")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(taskId, map);
+		
+		
+		
+        return new ProcesDto(processInstanceId);
+	}
+	
+	public FormEnumResponse getApproval(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		taskService.createTaskQuery().processInstanceId(procesID).active();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		List<UserData> recenzenti = userDataRepository.findByRole("recenzent");
+		List<UserData> urednici = userDataRepository.findByRole("urednik");
+		
+		List<String> rec = new ArrayList<String>();
+		List<String> ure = new ArrayList<String>();
+		
+		for (UserData re : recenzenti) {
+			rec.add(re.getUsername());
+		}
+		for (UserData ur : urednici) {
+			ure.add(ur.getUsername());
+		}
+		
+		return new FormEnumResponse(task.getId(), procesID, properties, ure, rec);
+	}
+	
+	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)
+	{
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for(FormSubmissionRequest temp : list){
+			map.put(temp.getFieldId(), temp.getFieldValue());
+		}
+		
+		return map;
+	}
+}

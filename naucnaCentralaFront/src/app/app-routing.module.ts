@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
 import { UserApproveComponent } from './user-approve/user-approve.component';
 import { LoginComponent } from './login/login.component';
+import { NewMagizaineDataComponent } from './new-magizaine-data/new-magizaine-data.component';
+import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-editor-and-reviwer.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'newMagazine',
+    component: NewMagizaineDataComponent
+  },
+  {
+    path: 'newEditorAndReviwer/:procesID',
+    component: NewEditorAndReviwerComponent
   }
 ];
 

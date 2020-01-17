@@ -12,6 +12,8 @@ import { UserApproveComponent } from './user-approve/user-approve.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { Shared } from './services/Token';
+import { NewMagizaineDataComponent } from './new-magizaine-data/new-magizaine-data.component';
+import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-editor-and-reviwer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { Shared } from './services/Token';
     AdminApprovalComponent,
     UserApproveComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    NewMagizaineDataComponent,
+    NewEditorAndReviwerComponent
   ],
   imports: [
     BrowserModule,

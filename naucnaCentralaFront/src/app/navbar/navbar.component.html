@@ -7,6 +7,9 @@
     <li  class="nav-item">
       <a class="nav-link navigacija" [routerLink]="'/'">Home</a>
    </li>
+   <li *ngIf="tandu.role == 'urednik'" class="nav-item">
+        <a class="nav-link navigacija" [routerLink]="'/newMagazine'">New Magazine</a>
+    </li>
     <li *ngIf="tandu.role == 'admin'" class="nav-item">
         <a class="nav-link navigacija" [routerLink]="'/approval'">Approvals</a>
     </li>

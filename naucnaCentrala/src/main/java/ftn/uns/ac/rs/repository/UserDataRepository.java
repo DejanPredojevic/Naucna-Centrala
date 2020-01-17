@@ -10,4 +10,6 @@ import ftn.uns.ac.rs.model.UserData;
 @Repository
 public interface UserDataRepository extends JpaRepository<UserData, Long> {
 	List<UserData> findByUsername(String username);
+	List<UserData> findByRole(String role);
+	
 }

@@ -18,5 +18,5 @@ import { Observable } from 'rxjs';
 
     getUser(id:any){
       return this.http.get(SERVER_URL + 'getAdminApprove/'+id)
-  }
+    }
 }

@@ -1,0 +1,23 @@
+package ftn.uns.ac.rs.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.services.NewMagazineService;
+import ftn.uns.ac.rs.services.RegistrationService;
+
+@Controller
+public class NewMagazineController {
+		
+		@Autowired
+		NewMagazineService newMagazineService;
+		
+		@GetMapping(path = "/startNewMagazine", produces = "application/json")
+	    public ResponseEntity<FormFieldsResponse> startRegistration() {
+			FormFieldsResponse paymentOrderResponse = newMagazineService.start();
+	        return ResponseEntity.ok().body(paymentOrderResponse);
+	    }
+}

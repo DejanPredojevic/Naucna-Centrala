@@ -1,0 +1,51 @@
+package ftn.uns.ac.rs.handlers;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.model.UserData;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+
+@Service
+public class SaveMagazineData implements JavaDelegate{
+	
+	@Autowired
+	MagazineDataRepository magazineDataRepository;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		List<FormSubmissionRequest> userData = (List<FormSubmissionRequest>) execution.getVariable("magazineData");
+		String procesID = (String) execution.getVariable("procesID");
+		//sacuvati podatke magazine i setovati glavnog urednika magazina
+		System.out.println("USAO U SaveMagazineData");
+		MagazineData magazine = createMagazineData(userData);
+		magazine.setAktivnost(true);
+		magazine.setGlavniUrednik("urednik");
+		magazineDataRepository.save(magazine);
+	}
+	
+	private MagazineData createMagazineData(List<FormSubmissionRequest> dto) {
+		MagazineData magazineData = new MagazineData();
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("naucneOblast")) {
+				magazineData.setNaucneOblasti(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("naziv")) {
+				magazineData.setNaziv(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("isdn")) {
+				magazineData.setIsdn(Long.valueOf( dto.get(i).getFieldValue()));
+			}
+		}
+		
+		
+		return magazineData;
+	}
+}
