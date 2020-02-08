@@ -28,6 +28,7 @@ public class SaveMagazineData implements JavaDelegate{
 		MagazineData magazine = createMagazineData(userData);
 		magazine.setAktivnost(true);
 		magazine.setGlavniUrednik("urednik");
+		magazine.setProcesID(procesID);
 		magazineDataRepository.save(magazine);
 	}
 	

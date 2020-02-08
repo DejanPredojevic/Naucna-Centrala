@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { Shared } from './services/Token';
 import { NewMagizaineDataComponent } from './new-magizaine-data/new-magizaine-data.component';
 import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-editor-and-reviwer.component';
+import { AdminCheckComponent } from './admin-check/admin-check.component';
+import { UrednikKorekcijaComponent } from './urednik-korekcija/urednik-korekcija.component';
+import { AdminPublishComponent } from './admin-publish/admin-publish.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-edito
     NavbarComponent,
     LoginComponent,
     NewMagizaineDataComponent,
-    NewEditorAndReviwerComponent
+    NewEditorAndReviwerComponent,
+    AdminCheckComponent,
+    UrednikKorekcijaComponent,
+    AdminPublishComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+package ftn.uns.ac.rs.handlers;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+
+@Service
+public class AdminCheckSave implements JavaDelegate{
+	
+	@Autowired
+	MagazineDataRepository magazineDataRepository;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		List<FormSubmissionRequest> dto = (List<FormSubmissionRequest>) execution.getVariable("check");
+		String procesID = (String) execution.getVariable("procesID");
+		//sacuvati podatke magazine i setovati glavnog urednika magazina
+		System.out.println("USAO U SaveMagazineData");
+		MagazineData magazine = magazineDataRepository.findByProcesID(procesID);
+		magazine = createMagazineData(dto,magazine);
+		magazineDataRepository.save(magazine);
+		
+	}
+	
+	private MagazineData createMagazineData(List<FormSubmissionRequest> dto, MagazineData magazine) {
+		magazine.setPublishMagazina(false);
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("komentar")) {
+				magazine.setKomentar(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("proveraPodataka")) {
+				if(dto.get(i).getFieldValue().equals("true"))
+					magazine.setProveraPodataka(true);
+				else
+					magazine.setProveraPodataka(false);
+			}
+			if(dto.get(i).getFieldId().equals("isdn")) {
+				magazine.setIsdn(Long.valueOf( dto.get(i).getFieldValue()));
+			}
+			if(dto.get(i).getFieldId().equals("aktivnost")) {
+				magazine.setNaziv(dto.get(i).getFieldValue());
+			}
+		}
+		
+		return magazine;
+	}
+}

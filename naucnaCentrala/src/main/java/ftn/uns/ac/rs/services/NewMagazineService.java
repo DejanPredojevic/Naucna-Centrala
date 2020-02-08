@@ -16,19 +16,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import ftn.uns.ac.rs.dto.FormAdminCheckResponse;
 import ftn.uns.ac.rs.dto.FormEnumResponse;
 import ftn.uns.ac.rs.dto.FormFieldsResponse;
 import ftn.uns.ac.rs.dto.FormSubmissionRequest;
 import ftn.uns.ac.rs.dto.ProcesDto;
-import ftn.uns.ac.rs.model.AdminApprovals;
+import ftn.uns.ac.rs.model.MagazineData;
 import ftn.uns.ac.rs.model.ScientificArea;
 import ftn.uns.ac.rs.model.UserData;
 import ftn.uns.ac.rs.repository.AdminRepository;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
 import ftn.uns.ac.rs.repository.ScientificAreaRepository;
 import ftn.uns.ac.rs.repository.UserDataRepository;
 
 @Service
 public class NewMagazineService {
+	
 	@Autowired
 	IdentityService identityService;
 	
@@ -49,6 +52,9 @@ public class NewMagazineService {
 	
 	@Autowired
 	UserDataRepository userDataRepository;
+	
+	@Autowired
+	MagazineDataRepository magazineDataRepository;
 
 	public FormFieldsResponse start() {
 		ProcessInstance pi = runtimeService.startProcessInstanceByKey("Kreiranje_casopisa");
@@ -82,6 +88,7 @@ public class NewMagazineService {
 				dto.get(i).setFieldValue(null);
 			}
 		}
+		
 		HashMap<String, Object> map = this.mapListToDto(dto);
 		formService.submitTaskForm(taskId, map);
 		
@@ -130,6 +137,51 @@ public class NewMagazineService {
 		formService.submitTaskForm(task.getId(), map);
 		
         return true;
+	}
+	
+	public FormAdminCheckResponse getForAdminCheck(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		MagazineData magazine = magazineDataRepository.findByProcesID(procesID);
+		
+		return new FormAdminCheckResponse(task.getId(), procesID, properties,magazine);
+	}
+	
+	public boolean saveAdminCheck(List<FormSubmissionRequest> dto, @PathVariable String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		
+		runtimeService.setVariable(procesId, "check", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		String temp = "";
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("proveraPodataka")) {
+				temp = dto.get(i).getFieldValue();
+			}
+		}
+		boolean response = false;
+		
+		if(temp.equals("true"))
+		   response = true;
+		
+		return response;
+	}
+	
+	public boolean saveUrednikCorect(List<FormSubmissionRequest> dto, @PathVariable String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		
+		runtimeService.setVariable(procesId, "check", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+		return true;
 	}
 	
 	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)

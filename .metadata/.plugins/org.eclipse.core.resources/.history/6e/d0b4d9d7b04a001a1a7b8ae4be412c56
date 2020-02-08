@@ -1,0 +1,10 @@
+package ftn.uns.ac.rs.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import ftn.uns.ac.rs.model.AdminCheckData;
+import ftn.uns.ac.rs.model.MagazineData;
+
+public interface AdminCheckRepository extends JpaRepository<AdminCheckData, Long>{
+	MagazineData findByProcesID(String procesID);
+}

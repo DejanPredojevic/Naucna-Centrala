@@ -32,5 +32,23 @@ public class MagazineData {
 	@Column(nullable=false,length=100)
 	private Boolean aktivnost;
 	
+	@Column(nullable=false,length=100)
+	private String procesID;
+	
+	@Column
+	private String recenzenti;
+	
+	@Column
+	private String urednici;
+	
+	@Column
+	private String komentar;
+	
+	@Column
+	private Boolean proveraPodataka;
+	
+	@Column
+	private Boolean publishMagazina;
+	
 	
 }

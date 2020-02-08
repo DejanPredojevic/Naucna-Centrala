@@ -64,7 +64,7 @@ export class NewEditorAndReviwerComponent implements OnInit {
     this.magazineService.updateMagazineData(o, this.processInstance).subscribe(
       res => {
         alert("You successfuly chose editors and reviwers!")
-        window.location.href = "http://localhost:4201/";
+        window.location.href = "http://localhost:4201/adminCheck/" + this.processInstance ;
       },
       err => {
         console.log("Error occured");

@@ -27,4 +27,16 @@ import { Observable } from 'rxjs';
       return this.http.post(SERVER_URL + 'updateMagazineData/' + pocesID, approve) as Observable<any>;
     }
 
+    getAdminCheck(id:any){
+      return this.http.get(SERVER_URL + 'getAdminCheck/'+id)
+    }
+
+    saveAdminCheck(check, pocesID){
+      return this.http.post(SERVER_URL + 'saveAdminCheck/' + pocesID, check) as Observable<any>;
+    }
+
+    saveUrednikCorect(corect, pocesID){
+      return this.http.post(SERVER_URL + 'saveUrednikCorect/' + pocesID, corect) as Observable<any>;
+    }
+
 }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import ftn.uns.ac.rs.dto.FormAdminCheckResponse;
 import ftn.uns.ac.rs.dto.FormEnumResponse;
 import ftn.uns.ac.rs.dto.FormFieldsResponse;
 import ftn.uns.ac.rs.dto.FormSubmissionRequest;
@@ -44,6 +45,24 @@ public class NewMagazineController {
 		@PostMapping(path = "/updateMagazineData/{procesId}", produces = "application/json")
 	    public ResponseEntity<Boolean> approveUser(@RequestBody List<FormSubmissionRequest> dto, @PathVariable String procesId) {
 			Boolean valid = newMagazineService.updateMagazineData(dto,procesId);
+			return ResponseEntity.ok().body(valid);
+	    }
+		
+		@GetMapping(path = "/getAdminCheck/{processInstanceId}", produces = "application/json")
+	    public ResponseEntity<FormAdminCheckResponse> getAdminCheck(@PathVariable String processInstanceId) {
+			FormAdminCheckResponse formAdminCheckResponse = newMagazineService.getForAdminCheck(processInstanceId);
+	        return ResponseEntity.ok().body(formAdminCheckResponse);
+	    }
+		
+		@PostMapping(path = "/saveAdminCheck/{procesId}", produces = "application/json")
+	    public ResponseEntity<Boolean> saveAdminCheck(@RequestBody List<FormSubmissionRequest> dto, @PathVariable String procesId) {
+			Boolean valid = newMagazineService.saveAdminCheck(dto,procesId);
+			return ResponseEntity.ok().body(valid);
+	    }
+		
+		@PostMapping(path = "/saveUrednikCorect/{procesId}", produces = "application/json")
+	    public ResponseEntity<Boolean> saveUrednikCorect(@RequestBody List<FormSubmissionRequest> dto, @PathVariable String procesId) {
+			Boolean valid = newMagazineService.saveUrednikCorect(dto,procesId);
 			return ResponseEntity.ok().body(valid);
 	    }
 }

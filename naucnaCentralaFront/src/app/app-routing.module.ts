@@ -7,6 +7,9 @@ import { UserApproveComponent } from './user-approve/user-approve.component';
 import { LoginComponent } from './login/login.component';
 import { NewMagizaineDataComponent } from './new-magizaine-data/new-magizaine-data.component';
 import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-editor-and-reviwer.component';
+import { AdminCheckComponent } from './admin-check/admin-check.component';
+import { UrednikKorekcijaComponent } from './urednik-korekcija/urednik-korekcija.component';
+import { AdminPublishComponent } from './admin-publish/admin-publish.component';
 
 
 const routes: Routes = [
@@ -37,6 +40,18 @@ const routes: Routes = [
   {
     path: 'newEditorAndReviwer/:procesID',
     component: NewEditorAndReviwerComponent
+  },
+  {
+    path: 'adminCheck/:procesID',
+    component: AdminCheckComponent
+  },
+  {
+    path: 'urednikCorect/:procesID',
+    component: UrednikKorekcijaComponent
+  },
+  {
+    path: 'adminPublish/:procesID',
+    component: AdminPublishComponent
   }
 ];
 

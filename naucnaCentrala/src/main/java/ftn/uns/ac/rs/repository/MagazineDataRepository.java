@@ -7,5 +7,6 @@ import ftn.uns.ac.rs.model.MagazineData;
 
 @Repository
 public interface MagazineDataRepository extends JpaRepository<MagazineData, Long>  {
+	MagazineData findByProcesID(String procesID);
 
 }
