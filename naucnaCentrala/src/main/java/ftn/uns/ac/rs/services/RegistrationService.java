@@ -3,11 +3,9 @@ package ftn.uns.ac.rs.services;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 
 import org.camunda.bpm.engine.FormService;
 import org.camunda.bpm.engine.IdentityService;
-import org.camunda.bpm.engine.RepositoryService;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
 import org.camunda.bpm.engine.form.FormField;
@@ -37,9 +35,6 @@ public class RegistrationService {
 	
 	@Autowired
 	private RuntimeService runtimeService;
-	
-	@Autowired
-	private RepositoryService repositoryService;
 	
 	@Autowired
 	private UserDataRepository userDataRepository;

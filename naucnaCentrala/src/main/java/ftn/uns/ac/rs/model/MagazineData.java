@@ -35,6 +35,9 @@ public class MagazineData {
 	@Column(nullable=false,length=100)
 	private String procesID;
 	
+	@Column(nullable=false)
+	private Boolean openAccess;
+	
 	@Column
 	private String recenzenti;
 	

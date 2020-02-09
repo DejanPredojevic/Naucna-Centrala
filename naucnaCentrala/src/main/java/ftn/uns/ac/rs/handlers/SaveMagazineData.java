@@ -44,6 +44,12 @@ public class SaveMagazineData implements JavaDelegate{
 			if(dto.get(i).getFieldId().equals("isdn")) {
 				magazineData.setIsdn(Long.valueOf( dto.get(i).getFieldValue()));
 			}
+			if(dto.get(i).getFieldId().equals("nacinPlacanja")) {
+				if(dto.get(i).getFieldValue().equals("true"))
+					magazineData.setOpenAccess(true);
+				else
+					magazineData.setOpenAccess(false);
+			}
 		}
 		
 		

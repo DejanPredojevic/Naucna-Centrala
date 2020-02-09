@@ -23,6 +23,10 @@ export class AdminPublishComponent implements OnInit {
 
   constructor(private magazineService : MagazineService,private activatedRoute: ActivatedRoute) {
 
+    
+   }
+
+  ngOnInit() {
     this.activatedRoute.paramMap.subscribe(
       params => {
         this.id = params.get('procesID');
@@ -38,9 +42,6 @@ export class AdminPublishComponent implements OnInit {
             console.log("Error occured");
         });
       });
-   }
-
-  ngOnInit() {
   }
 
   onSubmit(value, form){
@@ -52,7 +53,7 @@ export class AdminPublishComponent implements OnInit {
      
      this.magazineService.saveUrednikCorect(o, this.processInstance).subscribe(
        res => {
-          window.location.href = "http://localhost:4201" ;
+          window.location.href = "http://localhost:4201/";
        },
        err => {
          console.log("Error occured");

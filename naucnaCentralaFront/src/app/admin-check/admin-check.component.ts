@@ -52,7 +52,7 @@ export class AdminCheckComponent implements OnInit {
 
     this.magazineService.saveAdminCheck(o, this.processInstance).subscribe(
       res => {
-              if(res == "true")
+              if(res == true)
                 window.location.href = "http://localhost:4201/adminPublish/" + this.processInstance;
               else
                 window.location.href = "http://localhost:4201/urednikCorect/" + this.processInstance;

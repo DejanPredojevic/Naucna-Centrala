@@ -10,6 +10,9 @@
    <li *ngIf="tandu.role == 'urednik'" class="nav-item">
         <a class="nav-link navigacija" [routerLink]="'/newMagazine'">New Magazine</a>
     </li>
+    <li *ngIf="tandu.role == 'autor'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/newArticle'">New Article</a>
+    </li>
     <li *ngIf="tandu.role == 'admin'" class="nav-item">
         <a class="nav-link navigacija" [routerLink]="'/approval'">Approvals</a>
     </li>
@@ -25,7 +28,9 @@
 <ul *ngIf="tandu.username != 'undefined'" class="nav" style="margin-right: 2vh;">
   <li *ngIf="tandu.username != 'undefined'" class="nav-item ml-3">
     <div class="inline row">
-        <p class="nav-link inline ml-3">{{tandu.username}}</p>
+        <a class="nav-link inline ml-3" [routerLink]="'/userPage'">
+          <p style="color: black; display: inline;">username:</p> {{tandu.username}}
+        </a>
         <a class="nav-link" [routerLink]="'/'" (click)="logout()">
           Log out
         </a>

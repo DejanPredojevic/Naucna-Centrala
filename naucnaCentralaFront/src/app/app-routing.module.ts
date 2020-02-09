@@ -10,6 +10,8 @@ import { NewEditorAndReviwerComponent } from './new-editor-and-reviwer/new-edito
 import { AdminCheckComponent } from './admin-check/admin-check.component';
 import { UrednikKorekcijaComponent } from './urednik-korekcija/urednik-korekcija.component';
 import { AdminPublishComponent } from './admin-publish/admin-publish.component';
+import { UserPageComponent } from './user-page/user-page.component';
+import { NewArticleComponent } from './new-article/new-article.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,10 @@ const routes: Routes = [
     component: NewMagizaineDataComponent
   },
   {
+    path: 'newArticle',
+    component: NewArticleComponent
+  },
+  {
     path: 'newEditorAndReviwer/:procesID',
     component: NewEditorAndReviwerComponent
   },
@@ -52,6 +58,10 @@ const routes: Routes = [
   {
     path: 'adminPublish/:procesID',
     component: AdminPublishComponent
+  },
+  {
+    path: 'userPage',
+    component: UserPageComponent
   }
 ];
 
