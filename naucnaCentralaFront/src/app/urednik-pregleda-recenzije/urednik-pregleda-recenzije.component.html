@@ -1,0 +1,32 @@
+<h1 style="text-align: center;">Articles waiting for admin to check recenzent vote</h1>
+<table class="container table mt-3 table-hover" style="text-align:center;">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col" colspan="8">
+                  Articles
+            </th>
+          </tr>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Naziv</th>
+        <th scope="col">Apstrakt</th>
+        <th scope="col">Pojmovi</th>
+        <th scope="col">Oblast</th>
+        <th scope="col">Komentar</th>
+        <th scope="col">Komentar recenzenta</th>
+        <th scope="col">Preporuka</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let article of articles ; let i = index" (click)="RowSelected(article); ">
+        <th scope="row">{{i + 1}}</th>
+        <th>{{article.naziv}}</th>
+        <th>{{article.apstrakt}}</th>
+        <th>{{article.pojmovi}}</th>
+        <th>{{article.oblast}}</th>
+        <th>{{article.komentar}}</th>
+        <th>{{article.komentarR}}</th>
+        <th>{{article.preporuka}}</th>
+      </tr>
+    </tbody>
+</table>

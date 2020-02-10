@@ -73,5 +73,32 @@ public class ArticleData implements Serializable {
 	private String komentar;
 	
 	@Column
+	private String urednikOblasti;
+	
+	@Column
+	private Boolean urednikIzbor;
+	
+	@Column
 	private Long vremeCekanjaNaIspravku;
+	
+	@Column
+	private String recenzenti;
+	
+	@Column
+	private Boolean recenzentiPregled;
+	
+	@Column
+	private String komentarR;
+	
+	@Column
+	private String preporuka;
+	
+	@Column
+	private Boolean urednikPregledaRecenziju;
+	
+	@Column
+	private Boolean odobren;
+	
+	@Column
+	private Boolean odbijen;
 }

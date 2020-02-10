@@ -10,5 +10,8 @@ public interface ArticleDataRepository extends JpaRepository<ArticleData, Long>{
 	ArticleData findByProcesID(String procesID);
 	List<ArticleData> findByPregled(Boolean pregled);
 	List<ArticleData> findByIspravkaPDF(Boolean pregled);
+	List<ArticleData> findByRecenzentiPregled(Boolean pregled);
+	List<ArticleData> findByUrednikPregledaRecenziju(Boolean urednikPregledaRecenziju);
 	
+	List<ArticleData> findByUrednikOblastiAndUrednikIzbor(String urednik,Boolean urednikIzbor);
 }

@@ -3,7 +3,7 @@
     <div class="row component">
       <div class="col"></div>
       <div class="col">
-          <h1 class="h3 mb-3 font-weight-normal">New Article</h1>
+          <h1 class="h3 mb-3 font-weight-normal">Admin pdf check</h1>
           <form #f="ngForm" (ngSubmit)="onSubmit(f.value, f)" novalidate style="width: 20vw; margin-left: 6vw;">
               <button type="button" class="btn btn-lg btn-primary btn-block" (click)="otvoriSaveChooser();">Download pdf</button>
               <div *ngFor="let field of formFields" class="form-group" >
@@ -12,8 +12,6 @@
                   <input type="checkbox" name={{field.id}} ngModel class="form-control"  *ngIf="field.type.name=='boolean'">
                   <input type="number" name={{field.id}} ngModel class="form-control"  *ngIf="field.type.name=='long'">
                   <input type="password" name={{field.id}} ngModel class="form-control"  *ngIf="field.label == 'Password'">
-                  
-                  
               </div>
               
               <div class="form-group">

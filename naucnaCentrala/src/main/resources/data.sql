@@ -5,7 +5,7 @@ insert into user_data(id, email, grad, ime, odobren_recenzent, password, prezime
 insert into user_data(id, email, grad, ime, odobren_recenzent, password, prezime, recenzent, scientific_area, titula, username, role) values 
 (3,'autor@gmail.com','kula','autor',false,'autor','autor',false,'autor' , 'autor', 'autor', 'autor');
 insert into user_data(id, email, grad, ime, odobren_recenzent, password, prezime, recenzent, scientific_area, titula, username, role) values 
-(4,'urednik1@gmail.com','kula','urednik1',true,'urednik1','urednik1',true,'urednik1' , 'urednik1', 'urednik1', 'urednik');
+(4,'urednik1@gmail.com','kula','urednik1',true,'urednik1','urednik1',true,'Naucna oblast 1,' , 'urednik1', 'urednik1', 'urednik');
 insert into user_data(id, email, grad, ime, odobren_recenzent, password, prezime, recenzent, scientific_area, titula, username, role) values 
 (5,'recenzent@gmail.com','kula','recenzent',true,'recenzent','recenzent',true,'recenzent' , 'recenzent', 'recenzent', 'recenzent');
 insert into user_data(id, email, grad, ime, odobren_recenzent, password, prezime, recenzent, scientific_area, titula, username, role) values 

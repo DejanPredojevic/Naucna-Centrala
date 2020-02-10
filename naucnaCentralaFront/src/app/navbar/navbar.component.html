@@ -13,6 +13,16 @@
     <li *ngIf="tandu.role == 'urednik'" class="nav-item">
       <a class="nav-link navigacija" [routerLink]="'/checkArticle'">Check Article</a>
     </li>
+    
+    <li *ngIf="tandu.role == 'urednik'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/chooseRecenzente'">Choose recenzente</a>
+    </li>
+    <li *ngIf="tandu.role == 'urednik' || tandu.role == 'recenzent'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/recenzentiPregled'">Ocenjivanje recenzenta</a>
+    </li>
+    <li *ngIf="tandu.role == 'urednik'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/checkRecenzije'">Check Recenzija</a>
+    </li>
     <li *ngIf="tandu.role == 'autor'" class="nav-item">
       <a class="nav-link navigacija" [routerLink]="'/newArticle'">New Article</a>
     </li>

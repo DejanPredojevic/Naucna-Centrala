@@ -25,6 +25,12 @@ import { ArticleCheckComponent } from './article-check/article-check.component';
 import { AdminPdfCheckComponent } from './admin-pdf-check/admin-pdf-check.component';
 import { PopravkaPdfComponent } from './popravka-pdf/popravka-pdf.component';
 import { PdfCorectionComponent } from './pdf-corection/pdf-corection.component';
+import { UrednikChooseRecenzenteComponent } from './urednik-choose-recenzente/urednik-choose-recenzente.component';
+import { ChooseRecenzenteComponent } from './choose-recenzente/choose-recenzente.component';
+import { RecenzentPregledComponent } from './recenzent-pregled/recenzent-pregled.component';
+import { RecenzentPregledaComponent } from './recenzent-pregleda/recenzent-pregleda.component';
+import { UrednikPregledaRecenzijeComponent } from './urednik-pregleda-recenzije/urednik-pregleda-recenzije.component';
+import { OdobravanjeArticlaComponent } from './odobravanje-articla/odobravanje-articla.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,13 @@ import { PdfCorectionComponent } from './pdf-corection/pdf-corection.component';
     ArticleCheckComponent,
     AdminPdfCheckComponent,
     PopravkaPdfComponent,
-    PdfCorectionComponent
+    PdfCorectionComponent,
+    UrednikChooseRecenzenteComponent,
+    ChooseRecenzenteComponent,
+    RecenzentPregledComponent,
+    RecenzentPregledaComponent,
+    UrednikPregledaRecenzijeComponent,
+    OdobravanjeArticlaComponent
   ],
   imports: [
     BrowserModule,

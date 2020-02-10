@@ -1,0 +1,237 @@
+package ftn.uns.ac.rs.services;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.form.FormField;
+import org.camunda.bpm.engine.form.TaskFormData;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.camunda.bpm.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ftn.uns.ac.rs.dto.FormArticleResponse;
+import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.dto.ProcesDto;
+import ftn.uns.ac.rs.model.ArticleData;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.model.ScientificArea;
+import ftn.uns.ac.rs.repository.ArticleDataRepository;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+import ftn.uns.ac.rs.repository.ScientificAreaRepository;
+
+@Service
+public class NewArticleService {
+
+	@Autowired
+	private IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	private ScientificAreaRepository scientificAreaRepository;
+	
+	@Autowired
+	private TaskService taskService;
+	
+	@Autowired
+	private FormService formService;
+	
+	@Autowired
+	private MagazineDataRepository magazineDataRepository;
+	
+	@Autowired
+	private ArticleDataRepository articleDataRepository;
+	
+	public FormArticleResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("ObradaTeksta");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+		List<MagazineData> magazines = magazineDataRepository.findAll();
+		
+        return new FormArticleResponse(task.getId(), pi.getId(), properties, magazines);
+	}
+	
+	public Boolean chooseMagazine(List<FormSubmissionRequest> dto, String taskId, String username) {
+		
+		Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+		String processInstanceId = task.getProcessInstanceId();
+		runtimeService.setVariable(processInstanceId, "magazineProces", dto);
+		runtimeService.setVariable(processInstanceId, "username", username);
+		runtimeService.setVariable(processInstanceId, "procesID", processInstanceId);
+
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("casopis")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(taskId, map);
+		
+        return true;
+	}
+	
+	public FormFieldsResponse getBasicInfo(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		List<ScientificArea> area = scientificAreaRepository.findAll();
+		List<String> oblasti = new ArrayList<String>();
+		for (ScientificArea scientificArea : area) {
+			oblasti.add(scientificArea.getScientificArea());
+		}
+		
+		return new FormFieldsResponse(task.getId(), procesID, properties, oblasti);
+	}
+	
+	public ProcesDto getPath() {
+		 JFileChooser chooser = new JFileChooser();
+		 FileFilter filter = new FileNameExtensionFilter("PDF files","pdf");
+		 chooser.setFileFilter(filter);
+		 int returnVal = chooser.showOpenDialog(null);
+		 if(returnVal == JFileChooser.APPROVE_OPTION) {
+			 return new ProcesDto(chooser.getSelectedFile().getPath());
+		 }else {
+			 return new ProcesDto("");
+		 }
+
+		
+	}
+	
+	public Boolean saveBasicInfo(List<FormSubmissionRequest> dto,  String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		runtimeService.setVariable(procesId, "dto", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("oblast")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+        return true;
+	}
+	
+	public FormFieldsResponse getTematika(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		return new FormFieldsResponse(task.getId(), procesID, properties, null);
+	}
+	
+	public List<ArticleData> getAllArticleForCheck(){
+		List<ArticleData> lista = new ArrayList<ArticleData>();
+		lista = articleDataRepository.findByPregled(true);
+		for(int i = 0;i<lista.size(); i++) {
+			lista.get(i).setPdf(null);
+		}
+		System.out.println(lista);
+		return lista;
+	}
+	
+	public List<ArticleData> getPdfCorect(){
+		List<ArticleData> lista = new ArrayList<ArticleData>();
+		lista = articleDataRepository.findByIspravkaPDF(true);
+		for(int i = 0;i<lista.size(); i++) {
+			lista.get(i).setPdf(null);
+		}
+		System.out.println(lista);
+		return lista;
+	}
+	
+	public Boolean saveTematika(List<FormSubmissionRequest> dto,  String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		runtimeService.setVariable(procesId, "dto", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+		boolean temp = false;
+		
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("tematika")) {
+				if(dto.get(i).getFieldValue().equals("true")) {
+					temp = true;
+				}
+			}
+		}
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+        return temp;
+	}
+	
+	public void downloadPDF(String procesID) throws SQLException {
+		 JFileChooser chooser = new JFileChooser();
+		 FileFilter filter = new FileNameExtensionFilter("PDF files","pdf");
+		 chooser.setFileFilter(filter);
+		 chooser.showSaveDialog(null);
+		 
+		 
+		 ArticleData article = articleDataRepository.findByProcesID(procesID);
+		 
+		 Blob myblob= article.getPdf();
+		 int myblobLength = (int) myblob.length();  
+		 byte[] myblobAsBytes = myblob.getBytes(1, myblobLength);
+		 
+		 try {  
+		        // Create file  
+		        FileWriter fstream = new FileWriter(chooser.getSelectedFile().getPath());  
+		        BufferedWriter out = new BufferedWriter(fstream);  
+		        for (Byte b: myblobAsBytes) {  
+		            out.write(b);  
+		        }  
+		        out.close();  
+		    } catch (Exception e) {  
+		        System.err.println("Error: " + e.getMessage());  
+		    }  
+		
+	}
+	
+	public List<ArticleData> getForUrednikChoose(String username){
+		List<ArticleData> articles = new ArrayList<ArticleData>();
+		
+		
+		
+		return articles;
+	}
+
+	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)
+	{
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for(FormSubmissionRequest temp : list){
+			map.put(temp.getFieldId(), temp.getFieldValue());
+		}
+		
+		return map;
+	}
+	
+}

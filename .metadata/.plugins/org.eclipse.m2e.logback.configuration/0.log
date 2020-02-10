@@ -4753,3 +4753,435 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.camunda.b
 2020-02-10 08:36:15,375 [Worker-793: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
 2020-02-10 09:16:06,866 [Worker-797: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-02-10 09:16:06,866 [Worker-797: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 09:16:06,867 [Worker-797: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 09:16:06,874 [Worker-797: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 09:16:06,874 [Worker-797: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:50:44,718 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:50:44,718 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:50:44,720 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:50:44,722 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:50:44,722 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:53:08,530 [Worker-807: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:53:08,531 [Worker-807: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:53:08,533 [Worker-807: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:53:08,534 [Worker-807: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:53:08,534 [Worker-807: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:53:37,754 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:53:37,754 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:53:37,756 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:53:37,757 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:53:37,757 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:56:37,436 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:56:37,436 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:56:37,438 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:56:37,439 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:56:37,439 [Worker-809: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:56:40,312 [Worker-810: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:56:40,313 [Worker-810: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:56:40,315 [Worker-810: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:56:40,316 [Worker-810: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:56:40,316 [Worker-810: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:57:02,714 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:57:02,715 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:57:02,717 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:57:02,718 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:57:02,718 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:59:00,098 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:59:00,099 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:59:00,101 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:59:00,102 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:59:00,102 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 12:59:20,188 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:59:20,189 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 12:59:20,190 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 12:59:20,192 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 12:59:20,192 [Worker-808: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:01:03,613 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:01:03,613 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:01:03,615 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:01:03,617 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:01:03,617 [Worker-805: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:21:04,499 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:04,499 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:21:04,501 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:21:04,503 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:04,503 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:21:11,333 [Worker-819: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:11,333 [Worker-819: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:21:11,335 [Worker-819: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:21:11,336 [Worker-819: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:11,337 [Worker-819: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:21:51,882 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:51,883 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:21:51,885 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:21:51,886 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:21:51,886 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:22:54,938 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:22:54,938 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:22:54,940 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:22:54,941 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:22:54,941 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:23:20,047 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:23:20,047 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:23:20,049 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:23:20,051 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:23:20,051 [Worker-821: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:23:37,164 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:23:37,164 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:23:37,166 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:23:37,167 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:23:37,167 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:24:11,412 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:24:11,413 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:24:11,415 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:24:11,416 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:24:11,416 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:32:29,144 [Worker-830: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:32:29,145 [Worker-830: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 13:32:29,145 [Worker-830: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:32:29,153 [Worker-830: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:32:29,153 [Worker-830: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:36:46,798 [Worker-834: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:36:46,799 [Worker-834: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:36:46,801 [Worker-834: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:36:46,802 [Worker-834: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:36:46,802 [Worker-834: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:40:10,363 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:40:10,364 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:40:10,366 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:40:10,367 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:40:10,367 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:42:44,080 [Worker-833: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:42:44,080 [Worker-833: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 13:42:44,081 [Worker-833: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:42:44,084 [Worker-833: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:42:44,084 [Worker-833: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:46:22,940 [Worker-840: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:46:22,940 [Worker-840: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 13:46:22,940 [Worker-840: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:46:22,947 [Worker-840: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:46:22,948 [Worker-840: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 13:59:10,578 [Worker-845: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:59:10,579 [Worker-845: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 13:59:10,581 [Worker-845: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 13:59:10,582 [Worker-845: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 13:59:10,582 [Worker-845: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:02:51,806 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:02:51,808 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:02:51,811 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:02:51,812 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:02:51,812 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:04:11,437 [Worker-844: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:04:11,438 [Worker-844: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:04:11,441 [Worker-844: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:04:11,443 [Worker-844: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:04:11,443 [Worker-844: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:12:15,580 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:12:15,580 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:12:15,582 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:12:15,584 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:12:15,584 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:13:17,633 [Worker-847: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:13:17,634 [Worker-847: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:13:17,636 [Worker-847: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:13:17,637 [Worker-847: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:13:17,637 [Worker-847: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:14:07,704 [Worker-852: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:07,705 [Worker-852: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:14:07,706 [Worker-852: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:14:07,708 [Worker-852: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:07,708 [Worker-852: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:14:34,093 [Worker-851: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:34,094 [Worker-851: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:14:34,096 [Worker-851: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:14:34,097 [Worker-851: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:34,097 [Worker-851: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:14:43,105 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:43,106 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:14:43,108 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:14:43,109 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:14:43,109 [Worker-843: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:15:02,904 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:15:02,904 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:15:02,906 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:15:02,908 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:15:02,908 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:19:17,725 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:19:17,725 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:19:17,727 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:19:17,728 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:19:17,728 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:22:29,143 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:22:29,143 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:22:29,145 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:22:29,146 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:22:29,146 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:23:05,034 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:23:05,035 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:23:05,037 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:23:05,038 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:23:05,038 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:23:22,001 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:23:22,002 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:23:22,004 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:23:22,005 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:23:22,005 [Worker-855: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:25:00,927 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:00,928 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:25:00,931 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:25:00,932 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:00,932 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:25:11,468 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:11,469 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:25:11,470 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:25:11,472 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:11,472 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:25:14,224 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:14,225 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:25:14,227 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:25:14,228 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:14,228 [Worker-850: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:25:16,338 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:16,338 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:25:16,340 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:25:16,341 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:16,341 [Worker-853: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:25:24,753 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:24,753 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:25:24,755 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:25:24,756 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:25:24,756 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:30:59,279 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:30:59,280 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:30:59,282 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:30:59,284 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:30:59,284 [Worker-856: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:38:09,839 [Worker-863: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:38:09,840 [Worker-863: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:38:09,842 [Worker-863: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:38:09,844 [Worker-863: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:38:09,844 [Worker-863: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:38:34,709 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:38:34,710 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:38:34,712 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:38:34,713 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:38:34,713 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:39:06,622 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:39:06,622 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:39:06,624 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:39:06,625 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:39:06,625 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:40:08,808 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:40:08,808 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:40:08,811 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:40:08,813 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:40:08,813 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:40:19,832 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:40:19,833 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:40:19,835 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:40:19,836 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:40:19,836 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:42:02,404 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:42:02,405 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:42:02,407 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:42:02,408 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:42:02,408 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:43:22,599 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:43:22,599 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:43:22,601 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:43:22,603 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:43:22,603 [Worker-862: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:43:25,513 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:43:25,513 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:43:25,515 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:43:25,516 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:43:25,517 [Worker-857: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:45:05,271 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:45:05,271 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 14:45:05,271 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:45:05,278 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:45:05,278 [Worker-864: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 14:47:26,549 [Worker-866: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:47:26,550 [Worker-866: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 14:47:26,552 [Worker-866: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 14:47:26,553 [Worker-866: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 14:47:26,553 [Worker-866: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:15:03,401 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:03,402 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:15:03,404 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:15:03,405 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:03,405 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:15:26,325 [Worker-877: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:26,325 [Worker-877: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:15:26,327 [Worker-877: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:15:26,329 [Worker-877: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:26,329 [Worker-877: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:15:41,913 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:41,913 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:15:41,915 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:15:41,917 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:15:41,917 [Worker-875: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:16:25,422 [Worker-880: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:16:25,423 [Worker-880: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:16:25,425 [Worker-880: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:16:25,426 [Worker-880: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:16:25,427 [Worker-880: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:17:03,296 [Worker-876: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:17:03,297 [Worker-876: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:17:03,299 [Worker-876: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:17:03,300 [Worker-876: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:17:03,300 [Worker-876: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:19:13,314 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:19:13,315 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:19:13,329 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:19:13,333 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:19:13,333 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:19:45,907 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:19:45,908 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:19:45,910 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:19:45,911 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:19:45,911 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:20:16,461 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:16,462 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:20:16,464 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:20:16,466 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:16,466 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:20:52,662 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:52,662 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:20:52,664 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:20:52,665 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:52,665 [Worker-884: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:20:56,859 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:56,860 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:20:56,863 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:20:56,864 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:20:56,864 [Worker-878: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:21:16,301 [Worker-882: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:21:16,302 [Worker-882: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:21:16,304 [Worker-882: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:21:16,305 [Worker-882: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:21:16,305 [Worker-882: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:23:28,061 [Worker-888: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:23:28,062 [Worker-888: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:23:28,063 [Worker-888: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:23:28,065 [Worker-888: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:23:28,065 [Worker-888: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:30:32,529 [Worker-892: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:30:32,530 [Worker-892: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:30:32,532 [Worker-892: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:30:32,533 [Worker-892: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:30:32,533 [Worker-892: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:31:01,119 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:31:01,120 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:31:01,122 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:31:01,124 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:31:01,124 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:31:15,942 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:31:15,942 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:31:15,944 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:31:15,945 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:31:15,945 [Worker-894: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:33:44,557 [Worker-900: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:33:44,557 [Worker-900: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 15:33:44,557 [Worker-900: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:33:44,565 [Worker-900: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:33:44,565 [Worker-900: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:44:34,208 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:44:34,209 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:44:34,210 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:44:34,212 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:44:34,212 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:44:59,924 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:44:59,924 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:44:59,926 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:44:59,927 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:44:59,927 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:45:03,166 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:45:03,166 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:45:03,168 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:45:03,169 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:45:03,169 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:45:05,321 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:45:05,322 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:45:05,324 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:45:05,325 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:45:05,325 [Worker-902: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:46:11,840 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:11,840 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:46:11,842 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:46:11,843 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:11,843 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:46:20,358 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:20,359 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:46:20,361 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:46:20,363 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:20,363 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:46:48,004 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:48,005 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:46:48,007 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:46:48,009 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:48,009 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:46:53,450 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:53,450 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:46:53,452 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:46:53,453 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:53,454 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:46:58,629 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:58,629 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:46:58,631 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:46:58,632 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:46:58,632 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:47:35,860 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:47:35,860 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:47:35,862 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:47:35,865 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:47:35,865 [Worker-898: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:47:38,595 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:47:38,595 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:47:38,597 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:47:38,599 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:47:38,599 [Worker-906: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:53:06,063 [Worker-909: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:53:06,064 [Worker-909: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:53:06,065 [Worker-909: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:53:06,067 [Worker-909: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:53:06,067 [Worker-909: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:55:48,265 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:55:48,265 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 15:55:48,265 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:55:48,272 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:55:48,272 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:59:02,639 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:59:02,640 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:59:02,641 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:59:02,643 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:59:02,643 [Worker-905: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 15:59:23,541 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:59:23,541 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 15:59:23,543 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 15:59:23,544 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 15:59:23,545 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 16:00:08,003 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:00:08,004 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 16:00:08,006 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 16:00:08,007 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:00:08,007 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 16:00:28,202 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:00:28,203 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 16:00:28,205 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 16:00:28,206 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:00:28,206 [Worker-913: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 16:01:41,400 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:01:41,400 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 16:01:41,402 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 16:01:41,403 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:01:41,403 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 16:02:48,255 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:02:48,255 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-10 16:02:48,255 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 16:02:48,262 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:02:48,263 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Dejan\Desktop\Master\Upravljanje poslovni procesima (UPP)\Projekat\Naucna-Centrala\naucnaCentrala\src\test\resources
+2020-02-10 16:05:54,504 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-10 16:05:54,504 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-10 16:05:54,506 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2020-02-10 16:05:54,507 [Worker-914: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

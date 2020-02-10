@@ -25,6 +25,7 @@ import org.springframework.stereotype.Service;
 
 import ftn.uns.ac.rs.dto.FormArticleResponse;
 import ftn.uns.ac.rs.dto.FormFieldsResponse;
+import ftn.uns.ac.rs.dto.FormOdobravanjeArticlaResponse;
 import ftn.uns.ac.rs.dto.FormSubmissionRequest;
 import ftn.uns.ac.rs.dto.ProcesDto;
 import ftn.uns.ac.rs.model.ArticleData;
@@ -109,6 +110,18 @@ public class NewArticleService {
 		return new FormFieldsResponse(task.getId(), procesID, properties, oblasti);
 	}
 	
+	public FormOdobravanjeArticlaResponse getOdobravanje(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		ArticleData arcile = articleDataRepository.findByProcesID(procesID);
+		arcile.setPdf(null);
+		
+		return new FormOdobravanjeArticlaResponse(task.getId(), procesID, properties, arcile);
+	}
+	
 	public ProcesDto getPath() {
 		 JFileChooser chooser = new JFileChooser();
 		 FileFilter filter = new FileNameExtensionFilter("PDF files","pdf");
@@ -130,6 +143,40 @@ public class NewArticleService {
 
 		for (int i = 0; i < dto.size(); i++) {
 			if(dto.get(i).getFieldId().equals("oblast")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+        return true;
+	}
+	
+	public Boolean saveRecenziju(List<FormSubmissionRequest> dto,  String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		runtimeService.setVariable(procesId, "dto", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("preporuka")) {
+				dto.get(i).setFieldValue(null);
+			}
+		}
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+        return true;
+	}
+	
+	public Boolean saveRecenzente(List<FormSubmissionRequest> dto,  String procesId) {
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		runtimeService.setVariable(procesId, "dto", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("recenzent")) {
 				dto.get(i).setFieldValue(null);
 			}
 		}
@@ -162,6 +209,16 @@ public class NewArticleService {
 	public List<ArticleData> getPdfCorect(){
 		List<ArticleData> lista = new ArrayList<ArticleData>();
 		lista = articleDataRepository.findByIspravkaPDF(true);
+		for(int i = 0;i<lista.size(); i++) {
+			lista.get(i).setPdf(null);
+		}
+		System.out.println(lista);
+		return lista;
+	}
+	
+	public List<ArticleData> getPregledRecenzija(){
+		List<ArticleData> lista = new ArrayList<ArticleData>();
+		lista = articleDataRepository.findByUrednikPregledaRecenziju(true);
 		for(int i = 0;i<lista.size(); i++) {
 			lista.get(i).setPdf(null);
 		}
@@ -214,6 +271,53 @@ public class NewArticleService {
 		        System.err.println("Error: " + e.getMessage());  
 		    }  
 		
+	}
+	
+	public List<ArticleData> getForUrednikChoose(String username){
+		List<ArticleData> articles = new ArrayList<ArticleData>();
+		articles = articleDataRepository.findByUrednikOblastiAndUrednikIzbor(username, true);
+		for(int i = 0;i<articles.size(); i++) {
+			articles.get(i).setPdf(null);
+		}
+		return articles;
+	}
+	
+	public List<ArticleData> getForRecenziju(String username){
+		List<ArticleData> articles = new ArrayList<ArticleData>();
+		List<ArticleData> response = new ArrayList<ArticleData>();
+		articles = articleDataRepository.findByRecenzentiPregled(true);
+		
+		for (ArticleData articleData : articles) {
+			String[] s = articleData.getRecenzenti().split(",");
+			for(int i = 0; i< s.length ; i++) {
+				if(s[i].equals(username)) {
+					response.add(articleData);
+					break;
+				}
+			}
+		}
+		
+		for(int i = 0;i<response.size(); i++) {
+			response.get(i).setPdf(null);
+		}
+		return response;
+	}
+	
+	public FormFieldsResponse getRecenzetChoose(String procesID) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesID).singleResult();
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		
+		ArticleData article = articleDataRepository.findByProcesID(procesID);
+		List<String> oblasti = new ArrayList<String>();
+		String[] s = article.getMagazine().getRecenzenti().split(",");
+		for(int i = 0; i< s.length ; i++) {
+			oblasti.add(s[i]);
+		}
+		
+		
+		return new FormFieldsResponse(task.getId(), procesID, properties, oblasti);
 	}
 
 	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)
