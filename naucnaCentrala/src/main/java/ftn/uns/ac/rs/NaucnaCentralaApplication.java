@@ -2,7 +2,9 @@ package ftn.uns.ac.rs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -16,7 +18,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class NaucnaCentralaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NaucnaCentralaApplication.class, args);
+		SpringApplicationBuilder builder = new SpringApplicationBuilder(NaucnaCentralaApplication.class);
+		builder.headless(false);
+		ConfigurableApplicationContext context = builder.run(args);
 	}
 
 	@Bean

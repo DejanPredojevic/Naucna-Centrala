@@ -1,0 +1,72 @@
+package ftn.uns.ac.rs.handlers;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+
+public class AutorChoose implements JavaDelegate{
+
+	@Autowired
+	MagazineDataRepository magazineDataRepository;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		List<FormSubmissionRequest> dto = (List<FormSubmissionRequest>) execution.getVariable("magazineProces");
+		String procesID = (String) execution.getVariable("procesID");
+		
+		String magazineProcesId = "";
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("casopis")) {
+				magazineProcesId = dto.get(i).getFieldValue();
+			}
+		}
+		
+		MagazineData magazine = magazineDataRepository.findByProcesID(magazineProcesId);
+		
+		if(magazine.getOpenAccess() == true)
+			execution.setVariable("clanarina", true);
+		else {
+			if()
+		}
+		
+		magazine = createMagazineData(dto,magazine);
+		magazineDataRepository.save(magazine);
+		
+	}
+	
+	/*private MagazineData createMagazineData(List<FormSubmissionRequest> dto, MagazineData magazine) {
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("komentar")) {
+				magazine.setKomentar(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("proveraPodataka")) {
+				if(dto.get(i).getFieldValue().equals("true"))
+					magazine.setProveraPodataka(true);
+				else
+					magazine.setProveraPodataka(false);
+			}
+			if(dto.get(i).getFieldId().equals("isdn")) {
+				magazine.setIsdn(Long.valueOf( dto.get(i).getFieldValue()));
+			}
+			if(dto.get(i).getFieldId().equals("naziv")) {
+				magazine.setNaziv(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("aktivnost")) {
+				if(dto.get(i).getFieldValue().equals("true"))
+					magazine.setPublishMagazina(true);
+				else
+					magazine.setPublishMagazina(false);
+			}
+		}
+		
+		return magazine;
+	}*/
+
+}

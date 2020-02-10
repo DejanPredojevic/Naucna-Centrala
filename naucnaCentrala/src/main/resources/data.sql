@@ -15,3 +15,7 @@ insert into scientific_area(id, scientific_area) values (2, 'Naucna oblast 2');
 insert into scientific_area(id, scientific_area) values (3, 'Naucna oblast 3');
 insert into scientific_area(id, scientific_area) values (4, 'Naucna oblast 4');
 insert into scientific_area(id, scientific_area) values (5, 'Naucna oblast 5');
+insert into magazine_data(id, aktivnost, glavni_urednik, isdn, komentar, naucne_oblasti, naziv, open_access, procesid, provera_podataka, publish_magazina, recenzenti, urednici) 
+values (1, true, 'urednik', 234, '', 'Naucna Oblast 3,', 'asfaf', true, 'df9ff441-4b9a-11ea-aa3f-daf2ca3bbc08', true, true, 'recenzent,', 'urednik,');
+insert into magazine_data(id, aktivnost, glavni_urednik, isdn, komentar, naucne_oblasti, naziv, open_access, procesid, provera_podataka, publish_magazina, recenzenti, urednici) 
+values (2, true, 'urednik', 2344, '', 'Naucna Oblast 4,', 'asfafasdas', false, 'e7f437e8-4b9a-11ea-aa3f-daf2ca3bbc08', true, true, 'recenzent1,', 'urednik1,');

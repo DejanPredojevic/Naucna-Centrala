@@ -1,0 +1,82 @@
+package ftn.uns.ac.rs.services;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.form.FormField;
+import org.camunda.bpm.engine.form.TaskFormData;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.camunda.bpm.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import ftn.uns.ac.rs.dto.FormArticleResponse;
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.dto.ProcesDto;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+
+@Service
+public class NewArticleService {
+
+	@Autowired
+	private IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	private TaskService taskService;
+	
+	@Autowired
+	private FormService formService;
+	
+	@Autowired
+	private MagazineDataRepository magazineDataRepository;
+	
+	public FormArticleResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("ObradaTeksta");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+		List<MagazineData> magazines = magazineDataRepository.findAll();
+		
+        return new FormArticleResponse(task.getId(), pi.getId(), properties, magazines);
+	}
+	
+	public Boolean chooseMagazine(List<FormSubmissionRequest> dto, @PathVariable String procesId) {
+		
+		Task task = taskService.createTaskQuery().processInstanceId(procesId).singleResult();
+		runtimeService.setVariable(procesId, "odobrenje", dto);
+		runtimeService.setVariable(procesId, "procesID", procesId);
+
+		
+		
+		HashMap<String, Object> map = this.mapListToDto(dto);
+		formService.submitTaskForm(task.getId(), map);
+		
+        return true;
+	}
+	
+	private HashMap<String, Object> mapListToDto(List<FormSubmissionRequest> list)
+	{
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for(FormSubmissionRequest temp : list){
+			map.put(temp.getFieldId(), temp.getFieldValue());
+		}
+		
+		return map;
+	}
+	
+}

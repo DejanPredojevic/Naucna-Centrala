@@ -1,0 +1,26 @@
+<h1 style="text-align: center;">Pdf waiting for corection</h1>
+<table class="container table mt-3 table-hover" style="text-align:center;">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col" colspan="5">
+                  PDF
+            </th>
+          </tr>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Naziv</th>
+        <th scope="col">Apstrakt</th>
+        <th scope="col">Pojmovi</th>
+        <th scope="col">Oblast</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let article of articles ; let i = index" (click)="RowSelected(article); ">
+        <th scope="row">{{i + 1}}</th>
+        <th>{{article.naziv}}</th>
+        <th>{{article.apstrakt}}</th>
+        <th>{{article.pojmovi}}</th>
+        <th>{{article.oblast}}</th>
+      </tr>
+    </tbody>
+</table>

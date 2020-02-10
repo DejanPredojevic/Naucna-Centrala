@@ -1,0 +1,57 @@
+package ftn.uns.ac.rs.handlers;
+
+import java.sql.Date;
+import java.util.List;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.joda.time.LocalDate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.Clanarina;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.model.UserData;
+import ftn.uns.ac.rs.repository.ClanarinaRepository;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+import ftn.uns.ac.rs.repository.UserDataRepository;
+
+public class PayBil implements JavaDelegate{
+
+	@Autowired
+	MagazineDataRepository magazineDataRepository;
+	
+	@Autowired
+	UserDataRepository userDataRepository;
+	
+	@Autowired
+	ClanarinaRepository clanarinaRepository;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		List<FormSubmissionRequest> dto = (List<FormSubmissionRequest>) execution.getVariable("magazineProces");
+		String procesID = (String) execution.getVariable("procesID");
+		String username = (String) execution.getVariable("username");
+		
+		String magazineProcesId = "";
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("casopis")) {
+				magazineProcesId = dto.get(i).getFieldValue();
+			}
+		}
+		
+		MagazineData magazine = magazineDataRepository.findByProcesID(magazineProcesId);
+		UserData user = userDataRepository.findByUsername(username);
+		Clanarina clanarina = new Clanarina();
+		Date date = new Date(2020, 3, 9);
+		clanarina.setDatumDo(date);
+		clanarina.setKorisnik(user);
+		clanarina.setMagazine(magazine);
+		clanarina.setNaziv("Autor uplacuje clanarinu");
+		clanarina.setUrednik(false);
+		clanarina.setCena(500);
+		
+	}
+
+}

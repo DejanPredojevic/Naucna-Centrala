@@ -1,0 +1,69 @@
+package ftn.uns.ac.rs.handlers;
+
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.rowset.serial.SerialException;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ftn.uns.ac.rs.dto.FormSubmissionRequest;
+import ftn.uns.ac.rs.model.ArticleData;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.repository.ArticleDataRepository;
+
+@Service
+public class BasicInfoSave implements JavaDelegate{
+
+	@Autowired
+	ArticleDataRepository articleDataRepository;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		System.out.println("USAO SAM U BasicInfoSAve !!!!!!!!!!!!!!!!!!!!!");
+		List<FormSubmissionRequest> dto = (List<FormSubmissionRequest>) execution.getVariable("info");
+		String procesID = (String) execution.getVariable("procesID");
+		
+		ArticleData article = articleDataRepository.findByProcesID(procesID);
+		article = createArticleData(dto,article);
+	}
+	
+	private ArticleData createArticleData(List<FormSubmissionRequest> dto, ArticleData article) throws IOException, SQLException, SQLException {
+		for (int i = 0; i < dto.size(); i++) {
+			if(dto.get(i).getFieldId().equals("naslov")) {
+				article.setNaziv(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("pojmovi")) {
+				article.setPojmovi(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("apstrakt")) {
+				article.setApstrakt(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("oblast")) {
+				article.setOblast(dto.get(i).getFieldValue());
+			}
+			if(dto.get(i).getFieldId().equals("pdf")) {
+				File pdfFile = new File(dto.get(i).getFieldValue());
+				byte[] pdfData = new byte[(int) pdfFile.length()];
+				DataInputStream dis = new DataInputStream(new FileInputStream(pdfFile));
+				dis.readFully(pdfData);  // read from file into byte[] array
+				dis.close();
+				Blob blob = new javax.sql.rowset.serial.SerialBlob(pdfData);
+				article.setPdf(blob);
+			}
+		}
+		
+		
+		return article;
+	}
+}

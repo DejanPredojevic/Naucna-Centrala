@@ -1,0 +1,53 @@
+package ftn.uns.ac.rs.services;
+
+import java.util.List;
+
+import org.camunda.bpm.engine.FormService;
+import org.camunda.bpm.engine.IdentityService;
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.TaskService;
+import org.camunda.bpm.engine.form.FormField;
+import org.camunda.bpm.engine.form.TaskFormData;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.camunda.bpm.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ftn.uns.ac.rs.dto.FormArticleResponse;
+import ftn.uns.ac.rs.model.MagazineData;
+import ftn.uns.ac.rs.repository.MagazineDataRepository;
+
+@Service
+public class NewArticleService {
+
+	@Autowired
+	private IdentityService identityService;
+	
+	@Autowired
+	private RuntimeService runtimeService;
+	
+	@Autowired
+	private TaskService taskService;
+	
+	@Autowired
+	private FormService formService;
+	
+	@Autowired
+	private MagazineDataRepository magazineDataRepository;
+	
+	public FormArticleResponse start() {
+		ProcessInstance pi = runtimeService.startProcessInstanceByKey("ObradaTeksta");
+
+		Task task = taskService.createTaskQuery().processInstanceId(pi.getId()).list().get(0);
+		
+		TaskFormData tfd = formService.getTaskFormData(task.getId());
+		List<FormField> properties = tfd.getFormFields();
+		for(FormField fp : properties) {
+			System.out.println(fp.getId() + fp.getType());
+		}
+		
+		List<MagazineData> magazines = magazineDataRepository.findAll();
+		
+        return new FormArticleResponse(task.getId(), pi.getId(), properties, magazines);
+	}
+}

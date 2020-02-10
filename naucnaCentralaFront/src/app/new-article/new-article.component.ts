@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../services/ArticleService';
+import { Shared } from '../services/Token';
 
 @Component({
   selector: 'app-new-article',
@@ -18,8 +19,8 @@ export class NewArticleComponent implements OnInit {
   private magazines = [];
   private oblastiS = "";
 
-  constructor(private magazineService : ArticleService) {
-    this.magazineService.startProcess().subscribe(
+  constructor(private articleService : ArticleService,private tandu: Shared) {
+    this.articleService.startProcess().subscribe(
       res => {
         this.formFieldsDto = res;
         this.formFields = this.formFieldsDto.formFields;
@@ -32,6 +33,23 @@ export class NewArticleComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.tandu.username = localStorage.getItem('username');
   }
 
+  onSubmit(value, form){
+     let o = new Array();
+     
+     for (var property in value) {
+       o.push({fieldId : property, fieldValue : value[property]});
+       console.log(value[property])
+     }
+     
+     this.articleService.chooseMagazine(o, this.formFieldsDto.taskId, this.tandu.username).subscribe(
+       res => {
+          window.location.href = "http://localhost:4201/articleInfo/" + this.processInstance ;
+       },
+       err => {
+         console.log("Error occured");
+     });
+   }
 }

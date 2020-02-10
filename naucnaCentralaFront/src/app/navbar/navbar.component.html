@@ -10,8 +10,14 @@
    <li *ngIf="tandu.role == 'urednik'" class="nav-item">
         <a class="nav-link navigacija" [routerLink]="'/newMagazine'">New Magazine</a>
     </li>
+    <li *ngIf="tandu.role == 'urednik'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/checkArticle'">Check Article</a>
+    </li>
     <li *ngIf="tandu.role == 'autor'" class="nav-item">
       <a class="nav-link navigacija" [routerLink]="'/newArticle'">New Article</a>
+    </li>
+    <li *ngIf="tandu.role == 'autor'" class="nav-item">
+      <a class="nav-link navigacija" [routerLink]="'/pdfCorect'">Pdf Corect</a>
     </li>
     <li *ngIf="tandu.role == 'admin'" class="nav-item">
         <a class="nav-link navigacija" [routerLink]="'/approval'">Approvals</a>

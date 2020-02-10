@@ -30,7 +30,7 @@ public class UpdateUserData implements JavaDelegate{
 		if(odobrenje.get(0).getFieldValue().equals("true")) {
 			System.out.println("USAO");
 			AdminApprovals admin =  adminRepository.findByProcesID(procesID).get(0);
-			UserData user = userDataRepository.findByUsername(admin.getUsername()).get(0);
+			UserData user = userDataRepository.findByUsername(admin.getUsername());
 			admin.setStatus("Obradjen");
 			user.setOdobrenRecenzent(true);
 			adminRepository.save(admin);
